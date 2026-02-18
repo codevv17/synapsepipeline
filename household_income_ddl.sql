@@ -55,10 +55,10 @@ BEGIN
         margin_of_error
     )
     SELECT
-        LTRIM(RTRIM(neighborhood)) AS neighborhood,
-        TRY_CAST(NULLIF(LTRIM(RTRIM(id)), '') AS INT) AS id,
-        TRY_CAST(NULLIF(LTRIM(RTRIM(estimate)), '') AS BIGINT) AS estimate,
-        TRY_CAST(NULLIF(LTRIM(RTRIM(margin_of_error)), '') AS DECIMAL(18,3)) AS margin_of_error
+        LTRIM(RTRIM(Prop_0)) AS neighborhood,
+        TRY_CAST(NULLIF(LTRIM(RTRIM(Prop_1)), '') AS INT) AS id,
+        TRY_CAST(NULLIF(LTRIM(RTRIM(Prop_2)), '') AS BIGINT) AS estimate,
+        TRY_CAST(NULLIF(LTRIM(RTRIM(Prop_3)), '') AS DECIMAL(18,3)) AS margin_of_error
     FROM dbo.household_income_raw;
 END;
 GO
