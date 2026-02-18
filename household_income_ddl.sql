@@ -4,17 +4,19 @@ GO
 
 CREATE TABLE dbo.household_income_raw
 (
-    neighborhood        VARCHAR(200)  NULL,
-    id                  VARCHAR(50)   NULL,
-    estimate            VARCHAR(50)   NULL,
-    margin_of_error     VARCHAR(50)   NULL
+    prop_0 VARCHAR(4000) NULL,
+    prop_1 VARCHAR(4000) NULL,
+    prop_2 VARCHAR(4000) NULL,
+    prop_3 VARCHAR(4000) NULL
 )
 WITH
 (
     DISTRIBUTION = ROUND_ROBIN,
     HEAP
 );
+
 GO
+
 
 
 IF OBJECT_ID('dbo.household_income', 'U') IS NOT NULL
