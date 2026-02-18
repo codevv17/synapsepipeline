@@ -2,19 +2,19 @@ IF OBJECT_ID('dbo.household_income_raw', 'U') IS NOT NULL
     DROP TABLE dbo.household_income_raw;
 GO
 
+
 CREATE TABLE dbo.household_income_raw
 (
-    prop_0 VARCHAR(4000) NULL,
-    prop_1 VARCHAR(4000) NULL,
-    prop_2 VARCHAR(4000) NULL,
-    prop_3 VARCHAR(4000) NULL
+    Prop_0 VARCHAR(4000) NULL,
+    Prop_1 VARCHAR(4000) NULL,
+    Prop_2 VARCHAR(4000) NULL,
+    Prop_3 VARCHAR(4000) NULL
 )
 WITH
 (
     DISTRIBUTION = ROUND_ROBIN,
     HEAP
 );
-
 GO
 
 
